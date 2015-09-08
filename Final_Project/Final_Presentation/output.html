@@ -1,0 +1,1789 @@
+﻿
+<!-- saved from url=(0068)https://www.ccxp.nthu.edu.tw/ccxp/COURSE/JH/7/7.6/7.6.1/JH761005.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=Big5">
+<title>Untitled Document</title>
+
+<link href="JH.css" rel="stylesheet" type="text/css">
+</head><body bgcolor="#FFFFFF" text="#000000" background="back_3.jpg"><div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
+<script type="text/javascript" language="JavaScript" src="overlib.js"></script>
+
+
+
+	<style type="text/css">
+	table thead td{
+		font-weight:bold;
+		text-decoration : underline;
+		cursor:pointer;
+	}
+	/* If you wish to highlight current sortable column, add layout effects below */
+	.highlightedColumn{
+		background-color:#EEE;
+	}
+	body {
+		margin:0;
+		padding:0;
+		background: #000 url(car2.jpg) center center fixed no-repeat;
+		-moz-background-size: cover;
+		background-size: cover;
+	}	
+	</style>
+<script type="text/javascript">
+	function change(varName, c, l, e, t, btn){
+		flag = window[varName];
+		if(flag==0){
+			for(var i=0; i<e.length; i++){
+				tmp = document.getElementById(e[i]).innerHTML;
+				index = tmp.search(t.substring(0, 7));
+				length = t.length;
+				document.getElementById(e[i]).innerHTML = tmp.substring(0, index)+tmp.substring(index+length, tmp.length);
+			}
+			document.getElementById(btn).value = "添加";
+			t_c-=c;
+			t_l-=l;
+			window[varName]=1;
+		}else{
+			for(var i=0; i<e.length; i++){
+				document.getElementById(e[i]).innerHTML+=t;
+			}
+			document.getElementById(btn).value = "刪除";
+			t_c+=c;
+			t_l+=l;
+			window[varName]=0;
+		}
+		document.getElementById("t_credit").innerHTML = t_c;
+		document.getElementById("t_loading").innerHTML = t_l+"<font color=\"Red\">/50</font>";
+	}
+</script>
+<script type="text/javascript">
+	function grade(){
+		document.location.href="grade.html"
+	}
+</script>
+
+
+<form name="form1" method="post" action="JH761005.htm"><input type="hidden" name="ACIXSTORE" value="tqhqacfrc628f8h0ufaag9lf25">
+    
+	<table width="100%" border="1" align="center" cellpadding="0" cellspacing="0">
+		<tbody>
+			<tr><td class="class2" width="50%">學號</td>
+				<td class="class2">9962319</td>
+			</tr>
+			<tr><td class="class2" width="50%">姓名</td>
+				<td class="class2">呂佳鴻</td>
+			</tr>
+			<tr><td class="class2" width="50%">科系班別</td>
+				<td class="class2">資工系三年級</td>
+			</tr>
+		</tbody>
+	</table>
+	<input type="button" value="歷屆成績" onclick="grade()"><br>
+  	<div style="overflow: auto; width: 100%; height: 40%"><table id="T1" width="100%" border="1" cellspacing="0" cellpadding="0" tableindex="1">
+    <colgroup>
+		<col id="col1_1">
+		<col id="col1_2">
+		<col id="col1_3">
+		<col id="col1_4">
+		<col id="col1_5">
+		<col id="col1_6">
+		<col id="col1_7">
+		<col id="col1_8">
+		<col id="col1_9">
+		<col id="col1_10">
+		<col id="col1_11">
+	</colgroup>
+	<thead>
+    <tr class="class2"> 
+	  <td style="text-decoration: none; cursor: default;" nowrap="nowrap" width="6%"><div align="center">退選</div></td>
+      <td width="10%"><div align="center">科號Course Number</div></td>
+      <td width="25%"><div align="center">科目名稱Course Title</div></td>
+      <td width="3%"><div align="center">學分Credit</div></td>
+      <td width="5%"><div align="center">時間Time</div></td>
+      <td width="8%"><div align="center">教師Professor</div></td>
+      <td width="3%"><div align="center">人限Size limit</div></td>
+      <td width="3%"><div align="center">對象Object</div></td>
+    </tr>
+   </thead>
+    <input type="hidden" name="c_key">
+    <input type="hidden" name="chkbtn">
+	
+	
+	
+	<tbody>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_0=0;
+				var c_0=3;
+				var t_0=6.95;
+				var s_0=["t_12", "t_13", "t_32"];
+				var d_0="CS42001<br>計算機結構<br>蔡仁松<br><br>";
+			</script>
+			<input id="button_0" value="刪除" class="class1" type="button" onclick="change('f_0', c_0, t_0, s_0, d_0, 'button_0')"></div></td>
+			<td><div align="center"> CS42001</div></td>
+			<td><div align="center"><font color="Red"> 計算機結構<br></font></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; T3T4R3</div></td>
+			<td><div align="center">&nbsp; 蔡仁松</div></td>
+			<td><div align="center">&nbsp; 51/70</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_1=1;
+				var c_1=3;
+				var t_1=4.64;
+				var s_1=["t_12", "t_13", "t_32"];
+				var d_1="CS42002<br>計算機結構<br>黃婷婷<br><br>";
+			</script>
+			<input id="button_1" value="添加" class="class1" type="button" onclick="change('f_1', c_1, t_1, s_1, d_1, 'button_1')"></div></td>
+			<td><div align="center"> CS42002</div></td>
+			<td><div align="center"><font color="Red"> 計算機結構<br></font></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; T3T4R3</div></td>
+			<td><div align="center">&nbsp; 黃婷婷</div></td>
+			<td><div align="center">&nbsp; 135/110</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_2=0;
+				var c_2=1;
+				var t_2=7.0;
+				var s_2=[];
+				var d_2="CS32081<br>系統整合實作一<br>指導教授<br><br>";
+			</script>
+			<input id="button_2" value="刪除" class="class1" type="button" onclick="change('f_2', c_2, t_2, s_2, d_2, 'button_2')"></div></td>
+			<td><div align="center"> CS32081</div></td>
+			<td><div align="center"> 系統整合實作一<br></div></td>
+			<td><div align="center"> 1</div></td>
+			<td><div align="center">&nbsp; </div></td>
+			<td><div align="center">&nbsp; 指導教授</div></td>
+			<td><div align="center">&nbsp; 156/110</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_3=1;
+				var c_3=3;
+				var t_3=7.75;
+				var s_3=["t_02", "t_03", "t_21"];
+				var d_3="CS22001<br>電路與電子學一<br>林永隆<br><br>";
+			</script>
+			<input id="button_3" value="添加" class="class1" type="button" onclick="change('f_3', c_3, t_3, s_3, d_3, 'button_3')"></div></td>
+			<td><div align="center"> CS22001</div></td>
+			<td><div align="center"> 電路與電子學一<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; M3M4W2</div></td>
+			<td><div align="center">&nbsp; 林永隆</div></td>
+			<td><div align="center">&nbsp; 115/80</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_4=1;
+				var c_4=3;
+				var t_4=7.0;
+				var s_4=["t_07", "t_08", "t_36"];
+				var d_4="CS42011<br>嵌入式系統概論<br>周百祥<br><br>";
+			</script>
+			<input id="button_4" value="添加" class="class1" type="button" onclick="change('f_4', c_4, t_4, s_4, d_4, 'button_4')"></div></td>
+			<td><div align="center"> CS42011</div></td>
+			<td><div align="center"> 嵌入式系統概論<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; M7M8R6</div></td>
+			<td><div align="center">&nbsp; 周百祥</div></td>
+			<td><div align="center">&nbsp; 137/90</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_5=0;
+				var c_5=3;
+				var t_5=5.25;
+				var s_5=["t_27", "t_28", "t_29"];
+				var d_5="CS12011<br>英語聽講<br>郭詩芝<br><br>";
+			</script>
+			<input id="button_5" value="刪除" class="class1" type="button" onclick="change('f_5', c_5, t_5, s_5, d_5, 'button_5')"></div></td>
+			<td><div align="center"> CS12011</div></td>
+			<td><div align="center"> 英語聽講<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; W7W8W9</div></td>
+			<td><div align="center">&nbsp; 郭詩芝</div></td>
+			<td><div align="center">&nbsp; 128/90</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_6=1;
+				var c_6=3;
+				var t_6=7.0;
+				var s_6=["t_210", "t_211", "t_212"];
+				var d_6="CS42031<br>網路程式設計<br>陳柏諭<br><br>";
+			</script>
+			<input id="button_6" value="添加" class="class1" type="button" onclick="change('f_6', c_6, t_6, s_6, d_6, 'button_6')"></div></td>
+			<td><div align="center"> CS42031</div></td>
+			<td><div align="center"> 網路程式設計<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; WaWbWc</div></td>
+			<td><div align="center">&nbsp; 陳柏諭</div></td>
+			<td><div align="center">&nbsp; 139/110</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_7=1;
+				var c_7=3;
+				var t_7=3.25;
+				var s_7=["t_27", "t_28", "t_29"];
+				var d_7="CS12002<br>資訊系統應用<br>陳聿廣<br><br>";
+			</script>
+			<input id="button_7" value="添加" class="class1" type="button" onclick="change('f_7', c_7, t_7, s_7, d_7, 'button_7')"></div></td>
+			<td><div align="center"> CS12002</div></td>
+			<td><div align="center"> 資訊系統應用<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; W7W8W9</div></td>
+			<td><div align="center">&nbsp; 陳聿廣</div></td>
+			<td><div align="center">&nbsp; 114/80</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_8=1;
+				var c_8=3;
+				var t_8=4.0;
+				var s_8=["t_07", "t_08", "t_09"];
+				var d_8="CS12003<br>資訊系統應用<br>黃子瑋<br><br>";
+			</script>
+			<input id="button_8" value="添加" class="class1" type="button" onclick="change('f_8', c_8, t_8, s_8, d_8, 'button_8')"></div></td>
+			<td><div align="center"> CS12003</div></td>
+			<td><div align="center"> 資訊系統應用<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; M7M8M9</div></td>
+			<td><div align="center">&nbsp; 黃子瑋</div></td>
+			<td><div align="center">&nbsp; 83/100</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_9=1;
+				var c_9=3;
+				var t_9=6.0;
+				var s_9=["t_17", "t_18", "t_37"];
+				var d_9="CS32031<br>編譯器設計<br>李政崑<br><br>";
+			</script>
+			<input id="button_9" value="添加" class="class1" type="button" onclick="change('f_9', c_9, t_9, s_9, d_9, 'button_9')"></div></td>
+			<td><div align="center"> CS32031</div></td>
+			<td><div align="center"> 編譯器設計<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; T7T8R7</div></td>
+			<td><div align="center">&nbsp; 李政崑</div></td>
+			<td><div align="center">&nbsp; 102/80</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_10=1;
+				var c_10=3;
+				var t_10=5.8;
+				var s_10=["t_17", "t_18", "t_19"];
+				var d_10="CS42051<br>軟體工程<br>劉龍龍<br><br>";
+			</script>
+			<input id="button_10" value="添加" class="class1" type="button" onclick="change('f_10', c_10, t_10, s_10, d_10, 'button_10')"></div></td>
+			<td><div align="center"> CS42051</div></td>
+			<td><div align="center"> 軟體工程<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; T7T8T9</div></td>
+			<td><div align="center">&nbsp; 劉龍龍</div></td>
+			<td><div align="center">&nbsp; 48/70</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_11=1;
+				var c_11=3;
+				var t_11=4.71;
+				var s_11=["t_110", "t_111", "t_112"];
+				var d_11="CS32051<br>Web程式設計、技術與應用<br>王崇?<br><br>";
+			</script>
+			<input id="button_11" value="添加" class="class1" type="button" onclick="change('f_11', c_11, t_11, s_11, d_11, 'button_11')"></div></td>
+			<td><div align="center"> CS32051</div></td>
+			<td><div align="center"> Web程式設計、技術與應用<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; TaTbTc</div></td>
+			<td><div align="center">&nbsp; 王崇?</div></td>
+			<td><div align="center">&nbsp; 117/90</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_12=1;
+				var c_12=3;
+				var t_12=5.5;
+				var s_12=["t_46", "t_47", "t_48"];
+				var d_12="CS32001<br>類比電路設計入門<br>李家同<br><br>";
+			</script>
+			<input id="button_12" value="添加" class="class1" type="button" onclick="change('f_12', c_12, t_12, s_12, d_12, 'button_12')"></div></td>
+			<td><div align="center"> CS32001</div></td>
+			<td><div align="center"> 類比電路設計入門<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; F6F7F8</div></td>
+			<td><div align="center">&nbsp; 李家同</div></td>
+			<td><div align="center">&nbsp; 129/100</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_13=1;
+				var c_13=3;
+				var t_13=1.0;
+				var s_13=["t_02", "t_03", "t_21"];
+				var d_13="CS22002<br>電路與電子學一<br>王俊堯<br><br>";
+			</script>
+			<input id="button_13" value="添加" class="class1" type="button" onclick="change('f_13', c_13, t_13, s_13, d_13, 'button_13')"></div></td>
+			<td><div align="center"> CS22002</div></td>
+			<td><div align="center"> 電路與電子學一<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; M3M4W2</div></td>
+			<td><div align="center">&nbsp; 王俊堯</div></td>
+			<td><div align="center">&nbsp; 43/70</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_14=1;
+				var c_14=3;
+				var t_14=5.67;
+				var s_14=["t_25", "t_26", "t_27"];
+				var d_14="CS22021<br>程式設計入門<br>歐家欣<br><br>";
+			</script>
+			<input id="button_14" value="添加" class="class1" type="button" onclick="change('f_14', c_14, t_14, s_14, d_14, 'button_14')"></div></td>
+			<td><div align="center"> CS22021</div></td>
+			<td><div align="center"> 程式設計入門<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; W5W6W7</div></td>
+			<td><div align="center">&nbsp; 歐家欣</div></td>
+			<td><div align="center">&nbsp; 148/100</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_15=1;
+				var c_15=3;
+				var t_15=5.0;
+				var s_15=["t_15", "t_16", "t_45"];
+				var d_15="CS42021<br>數位系統設計<br>黃稚存<br><br>";
+			</script>
+			<input id="button_15" value="添加" class="class1" type="button" onclick="change('f_15', c_15, t_15, s_15, d_15, 'button_15')"></div></td>
+			<td><div align="center"> CS42021</div></td>
+			<td><div align="center"> 數位系統設計<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; T5T6F5</div></td>
+			<td><div align="center">&nbsp; 黃稚存</div></td>
+			<td><div align="center">&nbsp; 113/90</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_16=1;
+				var c_16=3;
+				var t_16=5.5;
+				var s_16=["t_07", "t_08", "t_36"];
+				var d_16="CS32071<br>多媒體技術概論<br>賴尚宏<br><br>";
+			</script>
+			<input id="button_16" value="添加" class="class1" type="button" onclick="change('f_16', c_16, t_16, s_16, d_16, 'button_16')"></div></td>
+			<td><div align="center"> CS32071</div></td>
+			<td><div align="center"> 多媒體技術概論<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; M7M8R6</div></td>
+			<td><div align="center">&nbsp; 賴尚宏</div></td>
+			<td><div align="center">&nbsp; 139/100</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_17=1;
+				var c_17=3;
+				var t_17=2.0;
+				var s_17=["t_27", "t_28", "t_29"];
+				var d_17="CS12001<br>資訊系統應用<br>邱聖元<br><br>";
+			</script>
+			<input id="button_17" value="添加" class="class1" type="button" onclick="change('f_17', c_17, t_17, s_17, d_17, 'button_17')"></div></td>
+			<td><div align="center"> CS12001</div></td>
+			<td><div align="center"> 資訊系統應用<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; W7W8W9</div></td>
+			<td><div align="center">&nbsp; 邱聖元</div></td>
+			<td><div align="center">&nbsp; 140/90</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_18=1;
+				var c_18=2;
+				var t_18=6.25;
+				var s_18=["t_07", "t_08"];
+				var d_18="CS32091<br>電子資通訊產業興衰史<br>林永隆<br><br>";
+			</script>
+			<input id="button_18" value="添加" class="class1" type="button" onclick="change('f_18', c_18, t_18, s_18, d_18, 'button_18')"></div></td>
+			<td><div align="center"> CS32091</div></td>
+			<td><div align="center"> 電子資通訊產業興衰史<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; M7M8</div></td>
+			<td><div align="center">&nbsp; 林永隆</div></td>
+			<td><div align="center">&nbsp; 129/90</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_19=1;
+				var c_19=3;
+				var t_19=5.0;
+				var s_19=["t_25", "t_26", "t_38"];
+				var d_19="CS42052<br>軟體工程<br>黃慶育<br><br>";
+			</script>
+			<input id="button_19" value="添加" class="class1" type="button" onclick="change('f_19', c_19, t_19, s_19, d_19, 'button_19')"></div></td>
+			<td><div align="center"> CS42052</div></td>
+			<td><div align="center"> 軟體工程<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; W5W6R8</div></td>
+			<td><div align="center">&nbsp; 黃慶育</div></td>
+			<td><div align="center">&nbsp; 115/90</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_20=1;
+				var c_20=3;
+				var t_20=7.67;
+				var s_20=["t_22", "t_23", "t_42"];
+				var d_20="CS42041<br>計算方法設計<br>盧錦隆<br><br>";
+			</script>
+			<input id="button_20" value="添加" class="class1" type="button" onclick="change('f_20', c_20, t_20, s_20, d_20, 'button_20')"></div></td>
+			<td><div align="center"> CS42041</div></td>
+			<td><div align="center"> 計算方法設計<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; W3W4F3</div></td>
+			<td><div align="center">&nbsp; 盧錦隆</div></td>
+			<td><div align="center">&nbsp; 78/100</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_21=1;
+				var c_21=3;
+				var t_21=4.5;
+				var s_21=["t_07", "t_08", "t_09"];
+				var d_21="CS32021<br>正規語言<br>吳鑑城<br><br>";
+			</script>
+			<input id="button_21" value="添加" class="class1" type="button" onclick="change('f_21', c_21, t_21, s_21, d_21, 'button_21')"></div></td>
+			<td><div align="center"> CS32021</div></td>
+			<td><div align="center"> 正規語言<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; M7M8M9</div></td>
+			<td><div align="center">&nbsp; 吳鑑城</div></td>
+			<td><div align="center">&nbsp; 114/70</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_22=1;
+				var c_22=3;
+				var t_22=5.0;
+				var s_22=["t_02", "t_03", "t_21"];
+				var d_22="CS42061<br>資料庫系統概論<br>陳宜欣<br><br>";
+			</script>
+			<input id="button_22" value="添加" class="class1" type="button" onclick="change('f_22', c_22, t_22, s_22, d_22, 'button_22')"></div></td>
+			<td><div align="center"> CS42061</div></td>
+			<td><div align="center"> 資料庫系統概論<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; M3M4W2</div></td>
+			<td><div align="center">&nbsp; 陳宜欣</div></td>
+			<td><div align="center">&nbsp; 129/80</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_23=1;
+				var c_23=3;
+				var t_23=1.0;
+				var s_23=["t_210", "t_211", "t_212"];
+				var d_23="CS32041<br>高等程式設計實作<br>王炳豐<br><br>";
+			</script>
+			<input id="button_23" value="添加" class="class1" type="button" onclick="change('f_23', c_23, t_23, s_23, d_23, 'button_23')"></div></td>
+			<td><div align="center"> CS32041</div></td>
+			<td><div align="center"> 高等程式設計實作<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; WaWbWc</div></td>
+			<td><div align="center">&nbsp; 王炳豐</div></td>
+			<td><div align="center">&nbsp; 132/90</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_24=0;
+				var c_24=2;
+				var t_24=4.05;
+				var s_24=["t_07", "t_08"];
+				var d_24="GE62032<br>陶謝詩選讀<br>林宏安<br><br>";
+			</script>
+			<input id="button_24" value="刪除" class="class1" type="button" onclick="change('f_24', c_24, t_24, s_24, d_24, 'button_24')"></div></td>
+			<td><div align="center"> GE62032</div></td>
+			<td><div align="center"> 陶謝詩選讀<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; M7M8</div></td>
+			<td><div align="center">&nbsp; 林宏安</div></td>
+			<td><div align="center">&nbsp; 127/100</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_25=1;
+				var c_25=2;
+				var t_25=4.79;
+				var s_25=["t_32", "t_33"];
+				var d_25="GE62081<br>現代詩選讀<br>楊佳嫻<br><br>";
+			</script>
+			<input id="button_25" value="添加" class="class1" type="button" onclick="change('f_25', c_25, t_25, s_25, d_25, 'button_25')"></div></td>
+			<td><div align="center"> GE62081</div></td>
+			<td><div align="center"> 現代詩選讀<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; R3R4</div></td>
+			<td><div align="center">&nbsp; 楊佳嫻</div></td>
+			<td><div align="center">&nbsp; 116/90</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_26=0;
+				var c_26=3;
+				var t_26=4.74;
+				var s_26=["t_16", "t_17", "t_18"];
+				var d_26="GE52021<br>前近代科學史<br>琅元<br><br>";
+			</script>
+			<input id="button_26" value="刪除" class="class1" type="button" onclick="change('f_26', c_26, t_26, s_26, d_26, 'button_26')"></div></td>
+			<td><div align="center"> GE52021</div></td>
+			<td><div align="center"> 前近代科學史<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; T6T7T8</div></td>
+			<td><div align="center">&nbsp; 琅元</div></td>
+			<td><div align="center">&nbsp; 140/90</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_27=1;
+				var c_27=2;
+				var t_27=3.93;
+				var s_27=["t_15", "t_16"];
+				var d_27="GE72001<br>中國歷史的演變發展二<br>張元<br><br>";
+			</script>
+			<input id="button_27" value="添加" class="class1" type="button" onclick="change('f_27', c_27, t_27, s_27, d_27, 'button_27')"></div></td>
+			<td><div align="center"> GE72001</div></td>
+			<td><div align="center"> 中國歷史的演變發展二<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; T5T6</div></td>
+			<td><div align="center">&nbsp; 張元</div></td>
+			<td><div align="center">&nbsp; 136/110</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_28=0;
+				var c_28=3;
+				var t_28=4.25;
+				var s_28=["t_21", "t_22", "t_23"];
+				var d_28="GE22022<br>心理學與現代生活<br>詹雨臻<br><br>";
+			</script>
+			<input id="button_28" value="刪除" class="class1" type="button" onclick="change('f_28', c_28, t_28, s_28, d_28, 'button_28')"></div></td>
+			<td><div align="center"> GE22022</div></td>
+			<td><div align="center"> 心理學與現代生活<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; W2W3W4</div></td>
+			<td><div align="center">&nbsp; 詹雨臻</div></td>
+			<td><div align="center">&nbsp; 90/100</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_29=1;
+				var c_29=2;
+				var t_29=4.56;
+				var s_29=["t_40", "t_41"];
+				var d_29="GE72051<br>台灣文化史<br>趙祐志<br><br>";
+			</script>
+			<input id="button_29" value="添加" class="class1" type="button" onclick="change('f_29', c_29, t_29, s_29, d_29, 'button_29')"></div></td>
+			<td><div align="center"> GE72051</div></td>
+			<td><div align="center"> 台灣文化史<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; F1F2</div></td>
+			<td><div align="center">&nbsp; 趙祐志</div></td>
+			<td><div align="center">&nbsp; 97/70</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_30=1;
+				var c_30=2;
+				var t_30=4.46;
+				var s_30=["t_15", "t_16"];
+				var d_30="GE72061<br>近代世界的形成<br>馬文英<br><br>";
+			</script>
+			<input id="button_30" value="添加" class="class1" type="button" onclick="change('f_30', c_30, t_30, s_30, d_30, 'button_30')"></div></td>
+			<td><div align="center"> GE72061</div></td>
+			<td><div align="center"> 近代世界的形成<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; T5T6</div></td>
+			<td><div align="center">&nbsp; 馬文英</div></td>
+			<td><div align="center">&nbsp; 101/80</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_31=1;
+				var c_31=3;
+				var t_31=4.32;
+				var s_31=["t_07", "t_08", "t_09"];
+				var d_31="GE12011<br>批判思考（通識）<br>鄭志忠<br><br>";
+			</script>
+			<input id="button_31" value="添加" class="class1" type="button" onclick="change('f_31', c_31, t_31, s_31, d_31, 'button_31')"></div></td>
+			<td><div align="center"> GE12011</div></td>
+			<td><div align="center"> 批判思考（通識）<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; M7M8M9</div></td>
+			<td><div align="center">&nbsp; 鄭志忠</div></td>
+			<td><div align="center">&nbsp; 153/110</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_32=1;
+				var c_32=3;
+				var t_32=4.26;
+				var s_32=["t_22", "t_23", "t_42", "t_43"];
+				var d_32="GE42013<br>經濟學原理二<br>祁玉蘭<br><br>";
+			</script>
+			<input id="button_32" value="添加" class="class1" type="button" onclick="change('f_32', c_32, t_32, s_32, d_32, 'button_32')"></div></td>
+			<td><div align="center"> GE42013</div></td>
+			<td><div align="center"> 經濟學原理二<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; W3W4F3F4</div></td>
+			<td><div align="center">&nbsp; 祁玉蘭</div></td>
+			<td><div align="center">&nbsp; 139/110</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_33=1;
+				var c_33=2;
+				var t_33=4.6;
+				var s_33=["t_35", "t_36"];
+				var d_33="GE62111<br>李杜詩選讀<br>向懿柔<br><br>";
+			</script>
+			<input id="button_33" value="添加" class="class1" type="button" onclick="change('f_33', c_33, t_33, s_33, d_33, 'button_33')"></div></td>
+			<td><div align="center"> GE62111</div></td>
+			<td><div align="center"> 李杜詩選讀<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; R5R6</div></td>
+			<td><div align="center">&nbsp; 向懿柔</div></td>
+			<td><div align="center">&nbsp; 66/90</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_34=1;
+				var c_34=3;
+				var t_34=4.85;
+				var s_34=["t_05", "t_06", "t_35"];
+				var d_34="GE42002<br>經濟學原理一<br>馮炳萱<br><br>";
+			</script>
+			<input id="button_34" value="添加" class="class1" type="button" onclick="change('f_34', c_34, t_34, s_34, d_34, 'button_34')"></div></td>
+			<td><div align="center"> GE42002</div></td>
+			<td><div align="center"> 經濟學原理一<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; M5M6R5</div></td>
+			<td><div align="center">&nbsp; 馮炳萱</div></td>
+			<td><div align="center">&nbsp; 138/90</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_35=1;
+				var c_35=3;
+				var t_35=4.75;
+				var s_35=["t_07", "t_08", "t_09"];
+				var d_35="GE42011<br>經濟學原理二<br>廖肇寧<br><br>";
+			</script>
+			<input id="button_35" value="添加" class="class1" type="button" onclick="change('f_35', c_35, t_35, s_35, d_35, 'button_35')"></div></td>
+			<td><div align="center"> GE42011</div></td>
+			<td><div align="center"> 經濟學原理二<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; M7M8M9</div></td>
+			<td><div align="center">&nbsp; 廖肇寧</div></td>
+			<td><div align="center">&nbsp; 131/90</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_36=1;
+				var c_36=3;
+				var t_36=4.19;
+				var s_36=["t_11", "t_12", "t_13"];
+				var d_36="GE42014<br>經濟學原理二<br>廖肇寧<br><br>";
+			</script>
+			<input id="button_36" value="添加" class="class1" type="button" onclick="change('f_36', c_36, t_36, s_36, d_36, 'button_36')"></div></td>
+			<td><div align="center"> GE42014</div></td>
+			<td><div align="center"> 經濟學原理二<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; T2T3T4</div></td>
+			<td><div align="center">&nbsp; 廖肇寧</div></td>
+			<td><div align="center">&nbsp; 111/90</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_37=1;
+				var c_37=2;
+				var t_37=4.48;
+				var s_37=["t_12", "t_13"];
+				var d_37="GE62041<br>紅樓夢選讀<br>羅漪文<br><br>";
+			</script>
+			<input id="button_37" value="添加" class="class1" type="button" onclick="change('f_37', c_37, t_37, s_37, d_37, 'button_37')"></div></td>
+			<td><div align="center"> GE62041</div></td>
+			<td><div align="center"> 紅樓夢選讀<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; T3T4</div></td>
+			<td><div align="center">&nbsp; 羅漪文</div></td>
+			<td><div align="center">&nbsp; 69/90</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_38=1;
+				var c_38=2;
+				var t_38=4.69;
+				var s_38=["t_33", "t_34"];
+				var d_38="GE32011<br>視覺文化<br>張美陵<br><br>";
+			</script>
+			<input id="button_38" value="添加" class="class1" type="button" onclick="change('f_38', c_38, t_38, s_38, d_38, 'button_38')"></div></td>
+			<td><div align="center"> GE32011</div></td>
+			<td><div align="center"> 視覺文化<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; R4Rn</div></td>
+			<td><div align="center">&nbsp; 張美陵</div></td>
+			<td><div align="center">&nbsp; 197/100</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_39=1;
+				var c_39=2;
+				var t_39=4.6;
+				var s_39=["t_47", "t_48"];
+				var d_39="GE62022<br>詩經選讀<br>陳燕梅<br><br>";
+			</script>
+			<input id="button_39" value="添加" class="class1" type="button" onclick="change('f_39', c_39, t_39, s_39, d_39, 'button_39')"></div></td>
+			<td><div align="center"> GE62022</div></td>
+			<td><div align="center"> 詩經選讀<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; F7F8</div></td>
+			<td><div align="center">&nbsp; 陳燕梅</div></td>
+			<td><div align="center">&nbsp; 133/110</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_40=1;
+				var c_40=2;
+				var t_40=4.36;
+				var s_40=["t_05", "t_06"];
+				var d_40="GE62001<br>六祖壇經選讀<br>王月秀<br><br>";
+			</script>
+			<input id="button_40" value="添加" class="class1" type="button" onclick="change('f_40', c_40, t_40, s_40, d_40, 'button_40')"></div></td>
+			<td><div align="center"> GE62001</div></td>
+			<td><div align="center"> 六祖壇經選讀<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; M5M6</div></td>
+			<td><div align="center">&nbsp; 王月秀</div></td>
+			<td><div align="center">&nbsp; 87/100</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_41=1;
+				var c_41=3;
+				var t_41=4.81;
+				var s_41=["t_17", "t_18", "t_19"];
+				var d_41="GE12012<br>批判思考（通識）<br>邱獻儀<br><br>";
+			</script>
+			<input id="button_41" value="添加" class="class1" type="button" onclick="change('f_41', c_41, t_41, s_41, d_41, 'button_41')"></div></td>
+			<td><div align="center"> GE12012</div></td>
+			<td><div align="center"> 批判思考（通識）<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; T7T8T9</div></td>
+			<td><div align="center">&nbsp; 邱獻儀</div></td>
+			<td><div align="center">&nbsp; 127/100</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_42=1;
+				var c_42=2;
+				var t_42=4.34;
+				var s_42=["t_17", "t_18"];
+				var d_42="GE62051<br>韓柳文選讀<br>羅漪文<br><br>";
+			</script>
+			<input id="button_42" value="添加" class="class1" type="button" onclick="change('f_42', c_42, t_42, s_42, d_42, 'button_42')"></div></td>
+			<td><div align="center"> GE62051</div></td>
+			<td><div align="center"> 韓柳文選讀<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; T7T8</div></td>
+			<td><div align="center">&nbsp; 羅漪文</div></td>
+			<td><div align="center">&nbsp; 126/100</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_43=1;
+				var c_43=2;
+				var t_43=4.33;
+				var s_43=["t_45", "t_46"];
+				var d_43="GE62121<br>歐蘇文選讀<br>謝嘉文<br><br>";
+			</script>
+			<input id="button_43" value="添加" class="class1" type="button" onclick="change('f_43', c_43, t_43, s_43, d_43, 'button_43')"></div></td>
+			<td><div align="center"> GE62121</div></td>
+			<td><div align="center"> 歐蘇文選讀<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; F5F6</div></td>
+			<td><div align="center">&nbsp; 謝嘉文</div></td>
+			<td><div align="center">&nbsp; 127/100</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_44=1;
+				var c_44=2;
+				var t_44=4.39;
+				var s_44=["t_32", "t_33"];
+				var d_44="GE62101<br>莊子選讀<br>楊儒賓<br><br>";
+			</script>
+			<input id="button_44" value="添加" class="class1" type="button" onclick="change('f_44', c_44, t_44, s_44, d_44, 'button_44')"></div></td>
+			<td><div align="center"> GE62101</div></td>
+			<td><div align="center"> 莊子選讀<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; R3R4</div></td>
+			<td><div align="center">&nbsp; 楊儒賓</div></td>
+			<td><div align="center">&nbsp; 107/80</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_45=1;
+				var c_45=2;
+				var t_45=4.39;
+				var s_45=["t_35", "t_36"];
+				var d_45="GE62072<br>魯迅選讀<br>黃淑芬<br><br>";
+			</script>
+			<input id="button_45" value="添加" class="class1" type="button" onclick="change('f_45', c_45, t_45, s_45, d_45, 'button_45')"></div></td>
+			<td><div align="center"> GE62072</div></td>
+			<td><div align="center"> 魯迅選讀<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; R5R6</div></td>
+			<td><div align="center">&nbsp; 黃淑芬</div></td>
+			<td><div align="center">&nbsp; 83/100</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_46=1;
+				var c_46=3;
+				var t_46=4.69;
+				var s_46=["t_32", "t_33", "t_34"];
+				var d_46="GE32002<br>認識藝術<br>馬孟晶<br><br>";
+			</script>
+			<input id="button_46" value="添加" class="class1" type="button" onclick="change('f_46', c_46, t_46, s_46, d_46, 'button_46')"></div></td>
+			<td><div align="center"> GE32002</div></td>
+			<td><div align="center"><font color="Blue"> 認識藝術<br></font></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; R3R4Rn</div></td>
+			<td><div align="center">&nbsp; 馬孟晶</div></td>
+			<td><div align="center">&nbsp; 214/100</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_47=1;
+				var c_47=2;
+				var t_47=4.43;
+				var s_47=["t_27", "t_28"];
+				var d_47="GE62071<br>魯迅選讀<br>黃琪椿<br><br>";
+			</script>
+			<input id="button_47" value="添加" class="class1" type="button" onclick="change('f_47', c_47, t_47, s_47, d_47, 'button_47')"></div></td>
+			<td><div align="center"> GE62071</div></td>
+			<td><div align="center"> 魯迅選讀<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; W7W8</div></td>
+			<td><div align="center">&nbsp; 黃琪椿</div></td>
+			<td><div align="center">&nbsp; 151/110</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_48=1;
+				var c_48=3;
+				var t_48=4.32;
+				var s_48=["t_22", "t_23", "t_42"];
+				var d_48="GE42021<br>經濟學<br>周瑞賢<br><br>";
+			</script>
+			<input id="button_48" value="添加" class="class1" type="button" onclick="change('f_48', c_48, t_48, s_48, d_48, 'button_48')"></div></td>
+			<td><div align="center"> GE42021</div></td>
+			<td><div align="center"> 經濟學<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; W3W4F3</div></td>
+			<td><div align="center">&nbsp; 周瑞賢</div></td>
+			<td><div align="center">&nbsp; 120/80</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_49=1;
+				var c_49=3;
+				var t_49=4.63;
+				var s_49=["t_31", "t_32", "t_33"];
+				var d_49="GE42041<br>公民社會與法治<br>方天賜<br><br>";
+			</script>
+			<input id="button_49" value="添加" class="class1" type="button" onclick="change('f_49', c_49, t_49, s_49, d_49, 'button_49')"></div></td>
+			<td><div align="center"> GE42041</div></td>
+			<td><div align="center"> 公民社會與法治<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; R2R3R4</div></td>
+			<td><div align="center">&nbsp; 方天賜</div></td>
+			<td><div align="center">&nbsp; 111/90</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_50=1;
+				var c_50=2;
+				var t_50=4.39;
+				var s_50=["t_42", "t_43"];
+				var d_50="GE72021<br>中國軸心時代的靈魂人物：孔子<br>許松源<br><br>";
+			</script>
+			<input id="button_50" value="添加" class="class1" type="button" onclick="change('f_50', c_50, t_50, s_50, d_50, 'button_50')"></div></td>
+			<td><div align="center"> GE72021</div></td>
+			<td><div align="center"> 中國軸心時代的靈魂人物：孔子<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; F3F4</div></td>
+			<td><div align="center">&nbsp; 許松源</div></td>
+			<td><div align="center">&nbsp; 152/110</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_51=1;
+				var c_51=2;
+				var t_51=4.81;
+				var s_51=["t_45", "t_46"];
+				var d_51="GE52002<br>科學革命<br>羅明德<br><br>";
+			</script>
+			<input id="button_51" value="添加" class="class1" type="button" onclick="change('f_51', c_51, t_51, s_51, d_51, 'button_51')"></div></td>
+			<td><div align="center"> GE52002</div></td>
+			<td><div align="center"> 科學革命<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; F5F6</div></td>
+			<td><div align="center">&nbsp; 羅明德</div></td>
+			<td><div align="center">&nbsp; 98/70</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_52=1;
+				var c_52=3;
+				var t_52=4.39;
+				var s_52=["t_22", "t_23", "t_24"];
+				var d_52="GE52013<br>科技與社會<br>林宗德<br><br>";
+			</script>
+			<input id="button_52" value="添加" class="class1" type="button" onclick="change('f_52', c_52, t_52, s_52, d_52, 'button_52')"></div></td>
+			<td><div align="center"> GE52013</div></td>
+			<td><div align="center"> 科技與社會<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; W3W4Wn</div></td>
+			<td><div align="center">&nbsp; 林宗德</div></td>
+			<td><div align="center">&nbsp; 140/100</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_53=1;
+				var c_53=3;
+				var t_53=4.43;
+				var s_53=["t_27", "t_28", "t_29"];
+				var d_53="GE32022<br>藝術與社會<br>梅韻秋<br><br>";
+			</script>
+			<input id="button_53" value="添加" class="class1" type="button" onclick="change('f_53', c_53, t_53, s_53, d_53, 'button_53')"></div></td>
+			<td><div align="center"> GE32022</div></td>
+			<td><div align="center"><font color="Blue"> 藝術與社會<br></font></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; W7W8W9</div></td>
+			<td><div align="center">&nbsp; 梅韻秋</div></td>
+			<td><div align="center">&nbsp; 210/100</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_54=1;
+				var c_54=3;
+				var t_54=4.22;
+				var s_54=["t_17", "t_18", "t_19"];
+				var d_54="GE52012<br>科技與社會<br>林宗德<br><br>";
+			</script>
+			<input id="button_54" value="添加" class="class1" type="button" onclick="change('f_54', c_54, t_54, s_54, d_54, 'button_54')"></div></td>
+			<td><div align="center"> GE52012</div></td>
+			<td><div align="center"> 科技與社會<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; T7T8T9</div></td>
+			<td><div align="center">&nbsp; 林宗德</div></td>
+			<td><div align="center">&nbsp; 100/70</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_55=1;
+				var c_55=2;
+				var t_55=4.84;
+				var s_55=["t_42", "t_43"];
+				var d_55="GE62052<br>韓柳文選讀<br>謝嘉文<br><br>";
+			</script>
+			<input id="button_55" value="添加" class="class1" type="button" onclick="change('f_55', c_55, t_55, s_55, d_55, 'button_55')"></div></td>
+			<td><div align="center"> GE62052</div></td>
+			<td><div align="center"> 韓柳文選讀<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; F3F4</div></td>
+			<td><div align="center">&nbsp; 謝嘉文</div></td>
+			<td><div align="center">&nbsp; 136/100</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_56=1;
+				var c_56=3;
+				var t_56=4.68;
+				var s_56=["t_37", "t_38", "t_39"];
+				var d_56="GE52011<br>科技與社會<br>林文源<br><br>";
+			</script>
+			<input id="button_56" value="添加" class="class1" type="button" onclick="change('f_56', c_56, t_56, s_56, d_56, 'button_56')"></div></td>
+			<td><div align="center"> GE52011</div></td>
+			<td><div align="center"> 科技與社會<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; R7R8R9</div></td>
+			<td><div align="center">&nbsp; 林文源</div></td>
+			<td><div align="center">&nbsp; 84/110</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_57=1;
+				var c_57=2;
+				var t_57=4.79;
+				var s_57=["t_22", "t_23"];
+				var d_57="GE62061<br>蘇辛詞選讀<br>蘇虹菱<br><br>";
+			</script>
+			<input id="button_57" value="添加" class="class1" type="button" onclick="change('f_57', c_57, t_57, s_57, d_57, 'button_57')"></div></td>
+			<td><div align="center"> GE62061</div></td>
+			<td><div align="center"> 蘇辛詞選讀<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; W3W4</div></td>
+			<td><div align="center">&nbsp; 蘇虹菱</div></td>
+			<td><div align="center">&nbsp; 133/100</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_58=1;
+				var c_58=3;
+				var t_58=5.06;
+				var s_58=["t_12", "t_13", "t_14"];
+				var d_58="GE12031<br>知識與實在<br>趙之振<br><br>";
+			</script>
+			<input id="button_58" value="添加" class="class1" type="button" onclick="change('f_58', c_58, t_58, s_58, d_58, 'button_58')"></div></td>
+			<td><div align="center"> GE12031</div></td>
+			<td><div align="center"> 知識與實在<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; T3T4Tn</div></td>
+			<td><div align="center">&nbsp; 趙之振</div></td>
+			<td><div align="center">&nbsp; 148/100</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_59=1;
+				var c_59=3;
+				var t_59=4.48;
+				var s_59=["t_11", "t_12", "t_13"];
+				var d_59="GE42042<br>公民社會與法治<br>方天賜<br><br>";
+			</script>
+			<input id="button_59" value="添加" class="class1" type="button" onclick="change('f_59', c_59, t_59, s_59, d_59, 'button_59')"></div></td>
+			<td><div align="center"> GE42042</div></td>
+			<td><div align="center"> 公民社會與法治<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; T2T3T4</div></td>
+			<td><div align="center">&nbsp; 方天賜</div></td>
+			<td><div align="center">&nbsp; 124/90</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_60=1;
+				var c_60=3;
+				var t_60=4.3;
+				var s_60=["t_27", "t_28", "t_29"];
+				var d_60="GE12001<br>當代科學文明<br>戴東源<br><br>";
+			</script>
+			<input id="button_60" value="添加" class="class1" type="button" onclick="change('f_60', c_60, t_60, s_60, d_60, 'button_60')"></div></td>
+			<td><div align="center"> GE12001</div></td>
+			<td><div align="center"> 當代科學文明<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; W7W8W9</div></td>
+			<td><div align="center">&nbsp; 戴東源</div></td>
+			<td><div align="center">&nbsp; 114/90</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_61=1;
+				var c_61=2;
+				var t_61=4.23;
+				var s_61=["t_37", "t_38"];
+				var d_61="GE22011<br>生態體系與全球變遷<br>王俊秀<br><br>";
+			</script>
+			<input id="button_61" value="添加" class="class1" type="button" onclick="change('f_61', c_61, t_61, s_61, d_61, 'button_61')"></div></td>
+			<td><div align="center"> GE22011</div></td>
+			<td><div align="center"> 生態體系與全球變遷<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; R7R8</div></td>
+			<td><div align="center">&nbsp; 王俊秀</div></td>
+			<td><div align="center">&nbsp; 64/90</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_62=1;
+				var c_62=3;
+				var t_62=4.92;
+				var s_62=["t_07", "t_08", "t_19"];
+				var d_62="GE52001<br>科學革命<br>徐光台<br><br>";
+			</script>
+			<input id="button_62" value="添加" class="class1" type="button" onclick="change('f_62', c_62, t_62, s_62, d_62, 'button_62')"></div></td>
+			<td><div align="center"> GE52001</div></td>
+			<td><div align="center"> 科學革命<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; M7M8T9</div></td>
+			<td><div align="center">&nbsp; 徐光台</div></td>
+			<td><div align="center">&nbsp; 123/80</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_63=1;
+				var c_63=3;
+				var t_63=4.44;
+				var s_63=["t_37", "t_38", "t_39"];
+				var d_63="GE32023<br>藝術與社會<br>梅韻秋<br><br>";
+			</script>
+			<input id="button_63" value="添加" class="class1" type="button" onclick="change('f_63', c_63, t_63, s_63, d_63, 'button_63')"></div></td>
+			<td><div align="center"> GE32023</div></td>
+			<td><div align="center"><font color="Blue"> 藝術與社會<br></font></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; R7R8R9</div></td>
+			<td><div align="center">&nbsp; 梅韻秋</div></td>
+			<td><div align="center">&nbsp; 324/80</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_64=1;
+				var c_64=3;
+				var t_64=4.69;
+				var s_64=["t_17", "t_18", "t_19"];
+				var d_64="GE32021<br>藝術與社會<br>梅韻秋<br><br>";
+			</script>
+			<input id="button_64" value="添加" class="class1" type="button" onclick="change('f_64', c_64, t_64, s_64, d_64, 'button_64')"></div></td>
+			<td><div align="center"> GE32021</div></td>
+			<td><div align="center"><font color="Blue"> 藝術與社會<br></font></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; T7T8T9</div></td>
+			<td><div align="center">&nbsp; 梅韻秋</div></td>
+			<td><div align="center">&nbsp; 198/70</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_65=1;
+				var c_65=3;
+				var t_65=4.8;
+				var s_65=["t_47", "t_48", "t_49"];
+				var d_65="GE42012<br>經濟學原理二<br>唐震宏<br><br>";
+			</script>
+			<input id="button_65" value="添加" class="class1" type="button" onclick="change('f_65', c_65, t_65, s_65, d_65, 'button_65')"></div></td>
+			<td><div align="center"> GE42012</div></td>
+			<td><div align="center"> 經濟學原理二<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; F7F8F9</div></td>
+			<td><div align="center">&nbsp; 唐震宏</div></td>
+			<td><div align="center">&nbsp; 153/110</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_66=1;
+				var c_66=2;
+				var t_66=4.67;
+				var s_66=["t_07", "t_08"];
+				var d_66="GE62021<br>詩經選讀<br>王月秀<br><br>";
+			</script>
+			<input id="button_66" value="添加" class="class1" type="button" onclick="change('f_66', c_66, t_66, s_66, d_66, 'button_66')"></div></td>
+			<td><div align="center"> GE62021</div></td>
+			<td><div align="center"> 詩經選讀<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; M7M8</div></td>
+			<td><div align="center">&nbsp; 王月秀</div></td>
+			<td><div align="center">&nbsp; 136/90</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_67=1;
+				var c_67=2;
+				var t_67=4.88;
+				var s_67=["t_07", "t_08"];
+				var d_67="GE62031<br>陶謝詩選讀<br>羅志仲<br><br>";
+			</script>
+			<input id="button_67" value="添加" class="class1" type="button" onclick="change('f_67', c_67, t_67, s_67, d_67, 'button_67')"></div></td>
+			<td><div align="center"> GE62031</div></td>
+			<td><div align="center"> 陶謝詩選讀<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; M7M8</div></td>
+			<td><div align="center">&nbsp; 羅志仲</div></td>
+			<td><div align="center">&nbsp; 107/70</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_68=1;
+				var c_68=2;
+				var t_68=4.6;
+				var s_68=["t_05", "t_06"];
+				var d_68="GE62011<br>三國演義選讀<br>羅志仲<br><br>";
+			</script>
+			<input id="button_68" value="添加" class="class1" type="button" onclick="change('f_68', c_68, t_68, s_68, d_68, 'button_68')"></div></td>
+			<td><div align="center"> GE62011</div></td>
+			<td><div align="center"> 三國演義選讀<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; M5M6</div></td>
+			<td><div align="center">&nbsp; 羅志仲</div></td>
+			<td><div align="center">&nbsp; 113/90</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_69=1;
+				var c_69=3;
+				var t_69=4.45;
+				var s_69=["t_17", "t_18", "t_19"];
+				var d_69="GE42051<br>社會文化分析<br>林文源<br><br>";
+			</script>
+			<input id="button_69" value="添加" class="class1" type="button" onclick="change('f_69', c_69, t_69, s_69, d_69, 'button_69')"></div></td>
+			<td><div align="center"> GE42051</div></td>
+			<td><div align="center"> 社會文化分析<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; T7T8T9</div></td>
+			<td><div align="center">&nbsp; 林文源</div></td>
+			<td><div align="center">&nbsp; 129/90</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_70=1;
+				var c_70=3;
+				var t_70=4.1;
+				var s_70=["t_27", "t_28", "t_29"];
+				var d_70="GE32001<br>認識藝術<br>馬孟晶<br><br>";
+			</script>
+			<input id="button_70" value="添加" class="class1" type="button" onclick="change('f_70', c_70, t_70, s_70, d_70, 'button_70')"></div></td>
+			<td><div align="center"> GE32001</div></td>
+			<td><div align="center"> 認識藝術<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; W7W8W9</div></td>
+			<td><div align="center">&nbsp; 馬孟晶</div></td>
+			<td><div align="center">&nbsp; 52/80</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_71=1;
+				var c_71=2;
+				var t_71=3.94;
+				var s_71=["t_32", "t_33"];
+				var d_71="GE62091<br>周易選讀<br>簡松興<br><br>";
+			</script>
+			<input id="button_71" value="添加" class="class1" type="button" onclick="change('f_71', c_71, t_71, s_71, d_71, 'button_71')"></div></td>
+			<td><div align="center"> GE62091</div></td>
+			<td><div align="center"> 周易選讀<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; R3R4</div></td>
+			<td><div align="center">&nbsp; 簡松興</div></td>
+			<td><div align="center">&nbsp; 112/70</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_72=1;
+				var c_72=3;
+				var t_72=4.47;
+				var s_72=["t_34", "t_35", "t_36"];
+				var d_72="GE22023<br>心理學與現代生活<br>陳永龍<br><br>";
+			</script>
+			<input id="button_72" value="添加" class="class1" type="button" onclick="change('f_72', c_72, t_72, s_72, d_72, 'button_72')"></div></td>
+			<td><div align="center"> GE22023</div></td>
+			<td><div align="center"> 心理學與現代生活<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; RnR5R6</div></td>
+			<td><div align="center">&nbsp; 陳永龍</div></td>
+			<td><div align="center">&nbsp; 126/80</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_73=1;
+				var c_73=2;
+				var t_73=4.52;
+				var s_73=["t_32", "t_33"];
+				var d_73="GE72011<br>歷史與思考<br>許松源<br><br>";
+			</script>
+			<input id="button_73" value="添加" class="class1" type="button" onclick="change('f_73', c_73, t_73, s_73, d_73, 'button_73')"></div></td>
+			<td><div align="center"> GE72011</div></td>
+			<td><div align="center"> 歷史與思考<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; R3R4</div></td>
+			<td><div align="center">&nbsp; 許松源</div></td>
+			<td><div align="center">&nbsp; 102/80</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_74=1;
+				var c_74=3;
+				var t_74=5.06;
+				var s_74=["t_02", "t_03", "t_21"];
+				var d_74="GE42001<br>經濟學原理一<br>張寶塔<br><br>";
+			</script>
+			<input id="button_74" value="添加" class="class1" type="button" onclick="change('f_74', c_74, t_74, s_74, d_74, 'button_74')"></div></td>
+			<td><div align="center"> GE42001</div></td>
+			<td><div align="center"> 經濟學原理一<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; M3M4W2</div></td>
+			<td><div align="center">&nbsp; 張寶塔</div></td>
+			<td><div align="center">&nbsp; 175/110</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_75=1;
+				var c_75=3;
+				var t_75=5.13;
+				var s_75=["t_37", "t_38", "t_39"];
+				var d_75="GE42015<br>經濟學原理二<br>王惠貞<br><br>";
+			</script>
+			<input id="button_75" value="添加" class="class1" type="button" onclick="change('f_75', c_75, t_75, s_75, d_75, 'button_75')"></div></td>
+			<td><div align="center"> GE42015</div></td>
+			<td><div align="center"> 經濟學原理二<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; R7R8R9</div></td>
+			<td><div align="center">&nbsp; 王惠貞</div></td>
+			<td><div align="center">&nbsp; 120/100</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_76=1;
+				var c_76=2;
+				var t_76=4.69;
+				var s_76=["t_22", "t_23"];
+				var d_76="GE72031<br>《資治通鑑》的歷史思維：漢末三國敘事<br>許松源<br><br>";
+			</script>
+			<input id="button_76" value="添加" class="class1" type="button" onclick="change('f_76', c_76, t_76, s_76, d_76, 'button_76')"></div></td>
+			<td><div align="center"> GE72031</div></td>
+			<td><div align="center"> 《資治通鑑》的歷史思維：漢末三國敘事<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; W3W4</div></td>
+			<td><div align="center">&nbsp; 許松源</div></td>
+			<td><div align="center">&nbsp; 67/80</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_77=1;
+				var c_77=2;
+				var t_77=4.61;
+				var s_77=["t_17", "t_18"];
+				var d_77="GE72041<br>資治通鑑選讀：晚唐五代<br>張元<br><br>";
+			</script>
+			<input id="button_77" value="添加" class="class1" type="button" onclick="change('f_77', c_77, t_77, s_77, d_77, 'button_77')"></div></td>
+			<td><div align="center"> GE72041</div></td>
+			<td><div align="center"> 資治通鑑選讀：晚唐五代<br></div></td>
+			<td><div align="center"> 2</div></td>
+			<td><div align="center">&nbsp; T7T8</div></td>
+			<td><div align="center">&nbsp; 張元</div></td>
+			<td><div align="center">&nbsp; 139/90</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_78=1;
+				var c_78=3;
+				var t_78=4.62;
+				var s_78=["t_07", "t_08", "t_09"];
+				var d_78="GE42031<br>文化與經濟<br>劉瑞華<br><br>";
+			</script>
+			<input id="button_78" value="添加" class="class1" type="button" onclick="change('f_78', c_78, t_78, s_78, d_78, 'button_78')"></div></td>
+			<td><div align="center"> GE42031</div></td>
+			<td><div align="center"> 文化與經濟<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; M7M8M9</div></td>
+			<td><div align="center">&nbsp; 劉瑞華</div></td>
+			<td><div align="center">&nbsp; 118/80</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		<tr class="word">
+			<td nowrap="nowrap" width="6%"><div align="center">
+			<script type="text/javascript">
+				var f_79=1;
+				var c_79=3;
+				var t_79=4.28;
+				var s_79=["t_02", "t_03", "t_04"];
+				var d_79="GE22021<br>心理學與現代生活<br>方聖平<br><br>";
+			</script>
+			<input id="button_79" value="添加" class="class1" type="button" onclick="change('f_79', c_79, t_79, s_79, d_79, 'button_79')"></div></td>
+			<td><div align="center"> GE22021</div></td>
+			<td><div align="center"> 心理學與現代生活<br></div></td>
+			<td><div align="center"> 3</div></td>
+			<td><div align="center">&nbsp; M3M4Mn</div></td>
+			<td><div align="center">&nbsp; 方聖平</div></td>
+			<td><div align="center">&nbsp; 102/80</div></td>
+			<td><div align="center">&nbsp;   </div></td>
+		</tr>
+		</tbody>
+	</table></div>
+	<br>
+	<script type="text/javascript">
+		var t_c = 15
+		var t_l = 32.24
+	</script>
+	<table width="100%" border="1">
+		<tr><td width="50%">學分數</td><td id="t_credit">15</td>
+		<tr><td width="50%">loading</td><td id="t_loading">32.24<font color="Red">/50</font></td>
+		</tr>
+	</table>
+	<br>
+	<table width="100%" border="1" cellspacing="0" cellpadding="0">
+		<tbody><tr class="class1">
+			<td width="5%"><div align="center">節次</div></td>
+			<td width="15%"><div align="center">星期一</div></td>
+			<td width="15%"><div align="center">星期二</div></td>
+			<td width="15%"><div align="center">星期三</div></td>
+			<td width="15%"><div align="center">星期四</div></td>
+			<td width="15%"><div align="center">星期五</div></td>
+			<td width="15%"><div align="center">星期六</div></td>
+		</tr>
+		<tr class="word">
+			<td width="5%"><div align="center">1</div></td>
+			<td width="15%"><div align="center" id="t_00">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_10">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_20">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_30">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_40">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_50">&nbsp;
+			</div></td>
+		</tr>
+		<tr class="word">
+			<td width="5%"><div align="center">2</div></td>
+			<td width="15%"><div align="center" id="t_01">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_11">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_21">&nbsp;
+				GE22022<br>心理學與現代生活<br>詹雨臻<br><br>
+			</div></td>
+			<td width="15%"><div align="center" id="t_31">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_41">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_51">&nbsp;
+			</div></td>
+		</tr>
+		<tr class="word">
+			<td width="5%"><div align="center">3</div></td>
+			<td width="15%"><div align="center" id="t_02">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_12">&nbsp;
+				CS42001<br>計算機結構<br>蔡仁松<br><br>
+			</div></td>
+			<td width="15%"><div align="center" id="t_22">&nbsp;
+				GE22022<br>心理學與現代生活<br>詹雨臻<br><br>
+			</div></td>
+			<td width="15%"><div align="center" id="t_32">&nbsp;
+				CS42001<br>計算機結構<br>蔡仁松<br><br>
+			</div></td>
+			<td width="15%"><div align="center" id="t_42">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_52">&nbsp;
+			</div></td>
+		</tr>
+		<tr class="word">
+			<td width="5%"><div align="center">4</div></td>
+			<td width="15%"><div align="center" id="t_03">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_13">&nbsp;
+				CS42001<br>計算機結構<br>蔡仁松<br><br>
+			</div></td>
+			<td width="15%"><div align="center" id="t_23">&nbsp;
+				GE22022<br>心理學與現代生活<br>詹雨臻<br><br>
+			</div></td>
+			<td width="15%"><div align="center" id="t_33">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_43">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_53">&nbsp;
+			</div></td>
+		</tr>
+		<tr class="word">
+			<td width="5%"><div align="center">n</div></td>
+			<td width="15%"><div align="center" id="t_04">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_14">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_24">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_34">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_44">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_54">&nbsp;
+			</div></td>
+		</tr>
+		<tr class="word">
+			<td width="5%"><div align="center">5</div></td>
+			<td width="15%"><div align="center" id="t_05">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_15">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_25">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_35">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_45">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_55">&nbsp;
+			</div></td>
+		</tr>
+		<tr class="word">
+			<td width="5%"><div align="center">6</div></td>
+			<td width="15%"><div align="center" id="t_06">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_16">&nbsp;
+				GE52021<br>前近代科學史<br>琅元<br><br>
+			</div></td>
+			<td width="15%"><div align="center" id="t_26">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_36">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_46">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_56">&nbsp;
+			</div></td>
+		</tr>
+		<tr class="word">
+			<td width="5%"><div align="center">7</div></td>
+			<td width="15%"><div align="center" id="t_07">&nbsp;
+				GE62032<br>陶謝詩選讀<br>林宏安<br><br>
+			</div></td>
+			<td width="15%"><div align="center" id="t_17">&nbsp;
+				GE52021<br>前近代科學史<br>琅元<br><br>
+			</div></td>
+			<td width="15%"><div align="center" id="t_27">&nbsp;
+				CS12011<br>英語聽講<br>郭詩芝<br><br>
+			</div></td>
+			<td width="15%"><div align="center" id="t_37">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_47">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_57">&nbsp;
+			</div></td>
+		</tr>
+		<tr class="word">
+			<td width="5%"><div align="center">8</div></td>
+			<td width="15%"><div align="center" id="t_08">&nbsp;
+				GE62032<br>陶謝詩選讀<br>林宏安<br><br>
+			</div></td>
+			<td width="15%"><div align="center" id="t_18">&nbsp;
+				GE52021<br>前近代科學史<br>琅元<br><br>
+			</div></td>
+			<td width="15%"><div align="center" id="t_28">&nbsp;
+				CS12011<br>英語聽講<br>郭詩芝<br><br>
+			</div></td>
+			<td width="15%"><div align="center" id="t_38">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_48">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_58">&nbsp;
+			</div></td>
+		</tr>
+		<tr class="word">
+			<td width="5%"><div align="center">9</div></td>
+			<td width="15%"><div align="center" id="t_09">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_19">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_29">&nbsp;
+				CS12011<br>英語聽講<br>郭詩芝<br><br>
+			</div></td>
+			<td width="15%"><div align="center" id="t_39">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_49">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_59">&nbsp;
+			</div></td>
+		</tr>
+		<tr class="word">
+			<td width="5%"><div align="center">a</div></td>
+			<td width="15%"><div align="center" id="t_010">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_110">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_210">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_310">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_410">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_510">&nbsp;
+			</div></td>
+		</tr>
+		<tr class="word">
+			<td width="5%"><div align="center">b</div></td>
+			<td width="15%"><div align="center" id="t_011">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_111">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_211">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_311">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_411">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_511">&nbsp;
+			</div></td>
+		</tr>
+		<tr class="word">
+			<td width="5%"><div align="center">c</div></td>
+			<td width="15%"><div align="center" id="t_012">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_112">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_212">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_312">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_412">&nbsp;
+			</div></td>
+			<td width="15%"><div align="center" id="t_512">&nbsp;
+			</div></td>
+		</tr>
+	</tbody></table>
+<script type="text/javascript">
+	initSortTable('T1',Array('S','S','S','S','S','S','S','S'));
+</script>
+</form>
+</body></html>
